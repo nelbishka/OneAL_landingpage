@@ -1,0 +1,264 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css?3">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One - Landing Page EOY</title>
+    <link rel="icon" type="image/png" href="https://promo.one.al/md/img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/3cf8248f36.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('#swiper1', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+                navigation: {
+                    nextEl: '#next1',
+                    prevEl: '#prev1',
+                },
+                breakpoints:{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    600:{
+                        slidesPerView: 2,
+                    },
+                    1200:{
+                        slidesPerView: 3,
+                    },
+                },
+                
+            });
+
+            var swiper1 = new Swiper('#swiper2', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+                navigation: {
+                    nextEl: '#next2',
+                    prevEl: '#prev2',
+                },
+                breakpoints:{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    600:{
+                        slidesPerView:2,
+                    },
+                    1200:{
+                        slidesPerView: 3,
+                    },
+                },
+                
+            });
+
+        document.getElementById("smart58").addEventListener("click", function(){
+            document.getElementById("tv1").classList.add("hidden");
+            document.getElementById("tv2").classList.remove("hidden");
+            document.getElementById("swiper1").classList.add("hidden");
+            document.getElementById("swiper2").classList.remove("hidden");
+            document.getElementById("next1").classList.add("hidden");
+            document.getElementById("prev1").classList.add("hidden");
+            document.getElementById("next2").classList.remove("hidden");
+            document.getElementById("prev2").classList.remove("hidden");
+            document.getElementById("smart40").classList.remove("underline");
+            document.getElementById("smart58").classList.add("underline");
+        });
+
+        document.getElementById("smart40").addEventListener("click", function(){
+            document.getElementById("tv2").classList.add("hidden");
+            document.getElementById("tv1").classList.remove("hidden");
+            document.getElementById("swiper2").classList.add("hidden");
+            document.getElementById("swiper1").classList.remove("hidden");
+            document.getElementById("next1").classList.remove("hidden");
+            document.getElementById("prev1").classList.remove("hidden");
+            document.getElementById("next2").classList.add("hidden");
+            document.getElementById("prev2").classList.add("hidden");
+            document.getElementById("smart58").classList.remove("underline");
+            document.getElementById("smart40").classList.add("underline");
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="relative p-12 bg-[#662E8F] border-b-2 border-white">
+        <a href="https://one.al">
+            <img src="./one-logo.png" alt="OneLogo" class="absolute top-0 left-0 h-20">
+        </a>
+    </div>
+
+    <div>
+    <div class="video">
+        <iframe class="video1" src="https://www.youtube.com/embed/moMJXcf-0Ac?autoplay=1&mute=1&loop=1&playlist=moMJXcf-0Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <article class="article1">
+        <h3 class="items-center justify-center text-center text-[#652D90]  font-bold text-3xl mb-5">Dhurata për ty!</h3>
+        <p class="items-center justify-center text-center text-black  font-medium mb-3">Viti 2023 ka qenë një vit sfidues, por plot emocione.<br> Ju falenderojmë për vitin që lamë pas, sinqeritetin, besnikërinë dhe skepticizmin tuaj me një dhuratë për këtë fundvit. <br> <br>Ejani në çdo dyqan One për të marrë dhuratën tuaj!</p>
+    </article>
+
+    <section class="section1">
+        <div class="img-container">
+            <img src="tv-gift1.png" class="gift" id="tv1">
+            <img src="tv-gift1.png" class="gift1 hidden" id="tv2">
+        </div>
+        <div class="section1-text">
+            <img src="snowflake.png" class="snowflake">
+            <img src="snowflake-xs.png" class="snowflake-xs">
+            <h3 class="items-center justify-center text-center text-[#652D90] text-3xl font-bold mb-3">Përfito FALAS një TCL Smart TV</h3>
+            <p class="items-center justify-center text-center text-[#652D90] font-medium">Këtë fundvit ju dhurojmë një android TV të re. Mjafton të merrni një nga planet <b>One Ultra Fiber</b> ose <b>One TV</b> me platformat Digitalb ose Tring.</p>
+        </div>
+    </section>
+
+    <article class="article2">
+        <h3 class="items-center justify-center text-center text-[#652D90] text-3xl font-bold mb-3">Merr dhuratë</h3>
+        <div class="justify-center content-center items-center text-center televisions">
+        <h3 class="text-[#652D90] text-3xl font-bold mb-3 underline hover:underline " id="smart40">TCL Smart TV 40"</h3>
+        <p class=" text-[#652D90] text-3xl font-light mb-3 px-6">ose</p> 
+        <h3 class="text-[#652D90] text-3xl font-bold mb-3 hover:underline " id="smart58">TCL Smart TV 58"</h3>
+        </div>
+        <h3 class="items-center justify-center text-center text-[#652D90] text-3xl font-bold mb-3">kur blen një nga planet</h3>
+    </article>
+
+    <div class="flex justify-center">
+        <button class="prev hover:bg-[#d89506]" id="prev1"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="prev hover:bg-[#d89506] hidden" id="prev2"><i class="fa-solid fa-arrow-left"></i></button>
+
+        <div class="swiper-container" id="swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="card-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="card-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="card-3.png" alt=""></div>
+            </div>
+        </div>
+        <div class="swiper-container hidden" id="swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="card-4.png" alt=""></div>
+                <div class="swiper-slide"><img src="card-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="card-3.png" alt=""></div>
+                <div class="swiper-slide"><img src="card-5.png" alt=""></div>
+                <div class="swiper-slide"><img src="card-6.png" alt=""></div>
+            </div>
+        </div>
+        <button class="next hover:bg-[#d89506]" id="next1"><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="next hover:bg-[#d89506] hidden" id="next2"><i class="fa-solid fa-arrow-right"></i></button>
+
+    </div>
+
+    <section class="section2">
+        <div class="section2text">
+            <img src="snowflake.png" class="snowflake1">
+            <img src="snowflake-m.png" class="snowflake-m">
+            <img src="snowflake-xs.png" class="snowflake2">
+            <h3 class=" text-[#652D90] text-3xl font-bold mb-3">Merr dhuratë një Smartphone/ Smartwatch</h3>
+            <p class="text-[#652D90] text-2xl mb-3">Filloje vitin me një smartphone apo smartwatch të ri, dhuratë nga ne!</p>
+            <p class="text-[#652D90] text-2xl font-bold mb-3">Mjafton të merrni një nga planet One Ultra për një kontratë dy vjeçare për të përfituar.</p>
+                <a href="https://www.one.al/eshop/listing/MOBILE/Postpaid/%20One%20Ultra%20Plans/plan/CTG1695637424766" class="items-center justify-center text-center text-[#F5B01A] bg-[#652D90] py-3 px-12 text-xl font-medium button">Shiko planet</a>
+        </div>
+        <div class="img-container1">
+            <img src="phonewatch.png" class="phonewatch">
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="mixmax">
+            <div style="background-image: url(mixmax0.1.png); background-repeat: no-repeat; width: 100%; background-size: contain;" id="mixmaxcol1">
+                <div id="mixmaxlogo">
+                    <img src="mixmaxlogo.png"> 
+                </div>
+                <div id="bannertext">
+                    <h3 class=" text-[#fff] text-3xl font-bold mb-3">Shtoji Paketat e Internetit me shpejtësi 300 Mbps ose 1 Gbps kombinimit tënd me Mix&Max</h3>
+                </div>
+                <div class="button1 text-center">
+                    <a href="https://promo.one.al/mixnmax" class="text-[#652D90]">Bëj kombinimin tani</a>
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <img src="mixmax1.png" class="mixmaximg sm:hidden">
+                <img src="mixmax2.png" class="mixmaximg sm:flex hidden">
+            </div>
+        </div>
+
+    </section>
+
+    <div class="flex justify-center">
+        <div class="flex flex-col md:px-12 bg-[#fff] details">
+            <div class="flex-1 text-xs md:text-base">
+                <h1 class="font-bold mb-2">Detaje:</h1>
+                <ul class="font-light list">
+                    <li>Oferta është e vlefshme për një periudhë promocionale vetëm për kontrata 24 mujore.</li>
+                    <li>Dhuratë Smartphone ose Smartwatch është e vlefshme për kontrata 24 mujore me planet One Ultra 50 dhe One Ultra Max .
+                        Ofertat janë të vlefshme deri në përfundimin e stokut.
+                        Çdo telefon ofrohet me garanci 2 vjeçare.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex justify-around footer text-[#652D90] text-2xl">
+        <div class="footer-column">
+            <h3>One Albania</h3>
+            <ul>
+                <li><a href="https://www.one.al/Store_Locator_Test">Dyqanet</a></li>
+                <li><a href="https://www.one.al/informacione-per-konsumatoret">Njoftime për Konsumatorët</a></li>
+                <li><a href="https://www.one.al/njoftime-prokurimi">Njoftime Prokurimi</a></li>
+                <li><a href="#">Karriera</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Packages & Plans</h3>
+            <ul>
+                <li><a href="#">Paketat One Unlimited</a></li>
+                <li><a href="#"></a>One Roaming</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Profilet</h3>
+            <ul>
+                <li><a href="https://www.one.al/company">Kompania</a></li>
+                <li><a href="https://www.one.al/business">Biznesi</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Të përgjithshme</h3>
+            <ul>
+                <li><a href="https://www.one.al/CompanyKOMPANIAInformacione_Ligjore/Kodi_i_privatesise">Kodi i privatësisë</a></li>
+                <li><a href="https://www.one.al/CompanyKOMPANIAInformacione_Ligjore/Termat_dhe_Kushtet">Terma & Kushte</a></li>
+                <li><a href="https://www.one.al/Terma_dhe_Kushte_My_One">Terma & Kushte My One</a></li>
+                <li><a href="https://www.one.al/Menyrat_e_pageses">Mënyrat e pagesës</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Na ndiq</h3>
+            <ul>
+                <li><a href="http://www.facebook.com/one.albania">Facebook</a></li>
+                <li><a href="https://instagram.com/one.telecommunications?igshid=1xq52qe4z6a22">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/one-albania/mycompany/">Linkedin</a></li>
+                <li><a href="https://www.youtube.com/channel/UCg_sbu8sajDlkeURlipd9_A/">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@onealbania">Tik Tok</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2022 All Rights Reserved.</p>
+        
+            <div class="social-icons">
+                <a href="http://www.facebook.com/one.albania"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCg_sbu8sajDlkeURlipd9_A/"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/one-albania/mycompany/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
